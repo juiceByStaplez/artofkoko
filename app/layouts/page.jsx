@@ -6,7 +6,7 @@ import "../scss/style.scss";
 const Page = ({ children }) => (
   <Fragment>
     <Header />
-    <main>{children}</main>
+    <main className="flex-col bg-black">{children}</main>
   </Fragment>
 );
 

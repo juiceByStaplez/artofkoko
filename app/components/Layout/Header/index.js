@@ -2,14 +2,11 @@ import React, { Component } from "react";
 import Link from "next/link";
 
 const Header = () => (
-  <header className="navbar">
+  <header className="navbar p-2">
     <section className="navbar-section">
-      <Link href="/blog">
-        <a className="navbar-brand mr-2">Blog</a>
-      </Link>
-      <Link href="/logs">
-        <a className="navbar-brand mr-2">Logs</a>
-      </Link>
+      <div className="brand no-underline ">
+        <Link href="/">koko</Link>
+      </div>
     </section>
     <section className="navbar-section">
       <div className="input-group input-inline">

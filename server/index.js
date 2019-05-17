@@ -15,7 +15,7 @@ const app = next({ dir: "./app", dev });
 const handle = app.getRequestHandler();
 
 // Sequelize
-const models = require("./models");
+const models = require("./db/models");
 
 /**
  * Front end Routes

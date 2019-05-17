@@ -15,6 +15,12 @@
       {
         "extensions": ["css$", "scss$"]
       }
+    ],
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "app/"
+      }
     ]
   ],
   "presets": ["next/babel"],
