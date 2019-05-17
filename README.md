@@ -7,30 +7,3 @@ This project is intended to create a framework for building server-side [React J
 ## How to Run
 
 `npm run dev` will kick start the development server. More scripts to come.
-
-## Features
-
-Build includes
-
-* Custom Webpack configuration
-* Custom Babel configuration
-* Custom Nodemon configuration
-* Custom Sequelize configuration
-* Tailwind CSS
-* Server side rendering of React
-* Sequelize ORM for MySQL integration
-* Support for environment variables
-* SCSS and global stylesheets
-
-### Roadmap
-
-* Custom ORM wrapper for Sequelize
-* Custom Controller wrapper for universal routing
-* Easy to configure content types
-* Caching
-* Custom SEO components (Analytics, Schema, etc)
-* Testing framework with Mocha/Chai
-* Redux for data integration
-* Webpack Bundle Size Analyzer
-* Multiple Zones
-* Caching support
