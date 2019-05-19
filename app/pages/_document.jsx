@@ -5,24 +5,11 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Colonial Utility</title>
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/spectre.css/dist/spectre.min.css"
-          />
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
-          />
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
-          />
+          <title>Art of Koko | the art of Koko Deranteriassian</title>
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <body>
           <Main />
-          <script src="https://unpkg.com/pell" />
           <NextScript />
         </body>
       </html>

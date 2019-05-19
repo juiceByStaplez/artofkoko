@@ -41,12 +41,22 @@ app
     server.use(bodyParser.urlencoded({ extended: true }));
     server.use(bodyParser.json());
 
+    server.get("/api/gallery/:category", (req, res) => {
+      // Parse url param, slashesDenoteHost
+      const { category } = req.params;
+      const pieces = [{ name: "Timmy" }, { name: "Tyler" }]
+      res.json(pieces);
+    });
     // Use React application on server
     server.get("*", (req, res) => {
       // Parse url param, slashesDenoteHost
       const parsedUrl = parse(req.url, true);
-      const { pathname, query = {} } = parsedUrl;
+      let { pathname, query = {} } = parsedUrl;
 
+      if (pathname.includes("gallery")) {
+        const category = pathname.replace('/gallery', '');
+        pathname = "/gallery";
+      }
       /**
        * Pull in front end routes, and check request against those routes
        */
@@ -58,7 +68,7 @@ app
     });
 
     // Connect to DB
-    models.sequelize.sync().then(function() {
+    models.sequelize.sync().then(function () {
       server.listen(PORT, err => {
         if (err) throw err;
         console.log(`> Ready on ${PORT}`);

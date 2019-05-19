@@ -8,15 +8,6 @@
 
 $font-size: 50px;
 
-.example {
-  @extend %message-shared;
-  font-size: $font-size;
-  display: flex;
-  color: $color;
-  border: 1px solid green;
-  @include border-radius(10px);
-
-  small {
-    color: red;
-  }
+a {
+  text-decoration: none;
 }
